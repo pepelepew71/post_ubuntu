@@ -21,6 +21,13 @@ echo "if [ -f \$POWERLINE_SCRIPT ]; then" >> ~/.bashrc
 echo "source \$POWERLINE_SCRIPT" >> ~/.bashrc
 echo "fi" >> ~/.bashrc
 
+# to ~/.vimrc
+echo "" >> ~/.vimrc
+echo "# Powerline" >> ~/.vimrc
+echo "python3 from powerline.vim import setup as powerline_setup" >> ~/.vimrc
+echo "python3 powerline_setup()" >> ~/.vimrc
+echo "python3 del powerline_setup" >> ~/.vimrc
+
 # show branch name
 POWERLINE_CONFIG=/usr/share/powerline/config_files/config.json
 if [ -f $POWERLINE_CONFIG ]; then
