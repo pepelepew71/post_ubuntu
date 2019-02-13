@@ -8,6 +8,9 @@ sudo apt-get install -y jq
 sudo apt-get install -y curl
 sudo apt-get install -y chromium-browser 
 
+# -- tmux
+sudo apt-get install -y tmux
+
 # -- python3
 sudo apt-get install -y python3-pip
 sudo apt-get install -y python3-tk

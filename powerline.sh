@@ -10,9 +10,6 @@ sudo wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-s
 
 fc-cache -vf ~/.fonts/
 
-cd ~
-git clone https://github.com/erikw/tmux-powerline.git ~/.tmux-powerline
-
 # to ~/.bashrc
 echo "" >> ~/.bashrc
 echo "# Powerline" >> ~/.bashrc
@@ -20,13 +17,6 @@ echo "POWERLINE_SCRIPT=/usr/share/powerline/bindings/bash/powerline.sh" >> ~/.ba
 echo "if [ -f \$POWERLINE_SCRIPT ]; then" >> ~/.bashrc
 echo "source \$POWERLINE_SCRIPT" >> ~/.bashrc
 echo "fi" >> ~/.bashrc
-
-# to ~/.vimrc
-echo "" >> ~/.vimrc
-echo "# Powerline" >> ~/.vimrc
-echo "python3 from powerline.vim import setup as powerline_setup" >> ~/.vimrc
-echo "python3 powerline_setup()" >> ~/.vimrc
-echo "python3 del powerline_setup" >> ~/.vimrc
 
 # show branch name
 POWERLINE_CONFIG=/usr/share/powerline/config_files/config.json
