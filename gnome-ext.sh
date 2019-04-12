@@ -10,3 +10,10 @@ make install
 cd ..
 rm dash-to-shell -rf
 
+# -- no title bar
+git clone https://github.com/franglais125/no-title-bar
+cd no-title-bar
+make install
+cd ..
+rm no-title-bar -rf
+
