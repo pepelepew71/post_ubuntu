@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 sudo apt install -y ibus-chewing
 sudo apt install -y vlc browser-plugin-vlc
