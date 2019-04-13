@@ -17,3 +17,7 @@ make install
 cd ..
 rm no-title-bar -rf
 
+# -- system monitor
+sudo apt install -y gir1.2-gtop-2.0 gir1.2-networkmanager-1.0  gir1.2-clutter-1.0
+git clone https://github.com/paradoxxxzero/gnome-shell-system-monitor-applet.git ~/.local/share/gnome-shell/extensions/system-monitor@paradoxxx.zero.gmail.com
+
