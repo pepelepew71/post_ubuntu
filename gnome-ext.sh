@@ -8,6 +8,7 @@ git clone https://github.com/home-sweet-gnome/dash-to-panel.git
 cd dash-to-panel
 make install
 cd ..
+sleep 2
 rm dash-to-shell -rf
 
 # -- no title bar
@@ -15,6 +16,7 @@ git clone https://github.com/franglais125/no-title-bar
 cd no-title-bar
 make install
 cd ..
+sleep 2
 rm no-title-bar -rf
 
 # -- system monitor
