@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 # -- always zoom workspaces
-git clone https://github.com/jamienicol/gnome-shell-extension-always-zoom-workspaces.git ~/.local/share/gnome-shell/extensions/alwayszoomworkspaces@jamie.thenicols.net
+git clone https://github.com/jamienicol/gnome-shell-extension-always-zoom-workspaces.git \
+    ~/.local/share/gnome-shell/extensions/alwayszoomworkspaces@jamie.thenicols.net
 
 # -- dash to panel
 git clone https://github.com/home-sweet-gnome/dash-to-panel.git
@@ -21,5 +22,17 @@ rm no-title-bar -rf
 
 # -- system monitor
 sudo apt install -y gir1.2-gtop-2.0 gir1.2-networkmanager-1.0  gir1.2-clutter-1.0
-git clone https://github.com/paradoxxxzero/gnome-shell-system-monitor-applet.git ~/.local/share/gnome-shell/extensions/system-monitor@paradoxxx.zero.gmail.com
+git clone https://github.com/paradoxxxzero/gnome-shell-system-monitor-applet.git
+cd gnome-shell-system-monitor-applet
+make install
+cd ..
+sleep 2
+rm gnome-shell-system-monitor-applet -rf
+
+# -- custom corner
+git clone https://gitlab.com/eccheng/customcorner.git \
+    ~/.local/share/gnome-shell/extensions/customcorner@eccheng.gitlab.com
+
+# -- top icons
+# https://extensions.gnome.org/extension/495/topicons/
 
