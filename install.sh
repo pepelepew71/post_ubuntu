@@ -18,6 +18,9 @@ sudo apt install -y redshift-gtk
 sudo apt install -y xterm
 sudo apt install -y pavucontrol
 sudo apt install -y dconf-editor
+sudo apt install -y tint2
+sudo apt install -y unity-tweak-tool
+sudo apt install -y gnome-tweak-tool
 
 #sudo apt install -y texlive-full
 
