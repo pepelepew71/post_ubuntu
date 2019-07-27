@@ -5,7 +5,6 @@ sudo apt install -y vim vim-gtk
 # vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 git clone https://github.com/vim-scripts/BufOnly.vim.git ~/.vim/bundle/BufOnly.vim
-git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
 git clone https://github.com/Yggdroot/indentLine.git ~/.vim/bundle/indentLine
 git clone https://github.com/vim-scripts/indentpython.vim.git ~/.vim/bundle/indentpython.vim
 git clone https://github.com/scrooloose/nerdcommenter.git ~/.vim/bundle/nerdcommenter
