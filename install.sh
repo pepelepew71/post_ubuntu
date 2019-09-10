@@ -21,6 +21,7 @@ sudo apt install -y dconf-editor
 sudo apt install -y tint2
 sudo apt install -y unity-tweak-tool
 sudo apt install -y gnome-tweak-tool
+sudo apt install -y indicator-multiload
 
 #sudo apt install -y texlive-full
 
