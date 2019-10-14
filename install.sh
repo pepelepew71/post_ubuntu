@@ -10,6 +10,7 @@ sudo apt install -y ctags
 sudo apt install -y htop
 sudo apt install -y git
 sudo apt install -y python-pip python3-pip python3-dev python3-tk
+sudo apt install -y synaptic
 sudo apt install -y build-essential
 sudo apt install -y cmake
 sudo apt install -y shutter
