@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 sudo apt install -y gcc make perl
-sudo apt install -y geany
+sudo apt install -y leafpad
+sudo apt install -y font-noto-cjk
 sudo apt install -y vlc browser-plugin-vlc
 sudo apt install -y openssh-server
 sudo apt install -y jq
@@ -17,4 +18,3 @@ sudo apt install -y kazam
 sudo apt install -y redshift-gtk
 
 #sudo apt install -y texlive-full
-
