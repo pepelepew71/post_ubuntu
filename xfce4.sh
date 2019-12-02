@@ -6,5 +6,5 @@ sudo apt install -y xfce4-indicator-plugin
 # themes: PRO-Dark-XFCE-Edition
 # https://www.pling.com/s/XFCE/p/1207818/
 
-# icons: Dark
-# https://www.pling.com/s/XFCE/p/1187019
+# icons: Tela Icon Theme
+# https://www.pling.com/s/XFCE/p/1279924
