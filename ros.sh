@@ -13,4 +13,6 @@ apt-cache search ros-kinetic
 sudo rosdep init
 rosdep update
 
-echo "#ROS\nsource /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+echo "" >> ~/.bashrc
+echo "# ROS" >> ~/.bashrc
+echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
