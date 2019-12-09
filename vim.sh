@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo apt install -y vim vim-gtk
+sudo apt install -y vim
 
 # vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
