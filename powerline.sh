@@ -1,25 +1,20 @@
 #!/usr/bin/env bash
 
-sudo apt-get -y install powerline
+git clone https://github.com/banga/powerline-shell.git
+cd powerline-shell/
+sudo python setup.py install
 
 # font
-mkdir -p ~/.fonts
-sudo wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf -O ~/.fonts/PowerlineSymbols.otf 
-mkdir -p ~/.config/fontconfig/conf.d/
-sudo wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf -O ~/.config/fontconfig/conf.d/10-powerline-symbols.conf 
-fc-cache -vf ~/.fonts/
-
-# show branch name at bash
-POWERLINE_CONFIG=/usr/share/powerline/config_files/config.json
-if [ -f $POWERLINE_CONFIG ]; then
-    sudo jq '.ext["shell"].theme="default_leftonly"'   <$POWERLINE_CONFIG > config.json
-    sudo mv config.json $POWERLINE_CONFIG
-fi
+sudo apt install fonts-powerline
 
 # to ~/.bashrc
-echo "" >> ~/.bashrc
 echo "# Powerline" >> ~/.bashrc
-echo "POWERLINE_SCRIPT=/usr/share/powerline/bindings/bash/powerline.sh" >> ~/.bashrc
-echo "if [ -f \$POWERLINE_SCRIPT ]; then" >> ~/.bashrc
-echo "    source \$POWERLINE_SCRIPT" >> ~/.bashrc
+echo "function _update_ps1() {" >> ~/.bashrc
+echo "PS1=$(powerline-shell $?)" >> ~/.bashrc
+echo "}" >> ~/.bashrc
+echo "" >> ~/.bashrc
+echo "if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then" >> ~/.bashrc
+echo "PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"" >> ~/.bashrc
 echo "fi" >> ~/.bashrc
+
+cd ..
