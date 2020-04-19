@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt update
 sudo apt install -y git
 
 git config --global user.email yc.huang71@gmail.com
