@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 pip3 install powerline-shell
+sudo apt install fonts-powerline
 
 echo "# powerline-shell" >> ~/.bashrc
 echo "function _update_ps1() {" >> ~/.bashrc
