@@ -9,3 +9,5 @@ echo '# pyenv' >> ~/.bashrc
 echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
+echo 'export PYENV_VIRTUALENV_DISABLE_PROMPT=1' >> ~/.bashrc
+echo '' >> ~/.bashrc

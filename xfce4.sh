@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
 
-# -- xfce4
 sudo apt install -y xfce4-terminal
+
+# -- panel
 sudo apt install -y xfce4-indicator-plugin
 sudo apt install -y xfce4-pulseaudio-plugin
+sudo apt install -y xfce4-genmon-plugin
 
-# -- application meny gui editor
+# -- application gui editor
 sudo apt install -y alacarte
 
-# -- thunar gui for archive
+# -- thunar archive
 sudo apt install -y thunar-archive-plugin

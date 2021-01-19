@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 
-sudo apt install -y gcc make perl cmake
+sudo apt install -y gcc make perl cmake automake
 sudo apt install -y build-essential
 sudo apt install -y python-pip python3-pip python3-dev python3-tk
 
-sudo apt install -y leafpad
+sudo apt install -y gedit
+sudo apt install -y pdftk
 sudo apt install -y htop
 
 sudo apt install -y openssh-server
