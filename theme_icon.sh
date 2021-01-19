@@ -6,3 +6,5 @@ sudo apt-get install arc-theme
 
 # -- icons: Qogir
 # https://www.pling.com/s/XFCE/p/1296407/
+# Extract to ~/.icons
+
