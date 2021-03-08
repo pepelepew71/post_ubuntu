@@ -14,4 +14,3 @@ git clone https://github.com/tmhedberg/SimpylFold.git ~/.vim/bundle/SimpylFold
 git clone https://github.com/majutsushi/tagbar.git ~/.vim/bundle/tagbar
 git clone https://github.com/vim-airline/vim-airline.git ~/.vim/bundle/vim-airline
 git clone https://github.com/jistr/vim-nerdtree-tabs.git ~/.vim/bundle/vim-nerdtree-tabs
-
