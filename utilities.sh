@@ -7,6 +7,7 @@ sudo apt install -y python-pip python3-pip python3-dev python3-tk
 sudo apt install -y gedit
 sudo apt install -y pdftk
 sudo apt install -y htop
+sudo apt install -y rofi
 
 sudo apt install -y openssh-server
 sudo apt install -y jq curl
