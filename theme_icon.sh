@@ -4,11 +4,13 @@ sudo add-apt-repository ppa:noobslab/themes
 sudo apt-get update
 sudo apt-get install arc-theme
 
-# -- icons: Qogir
-# https://www.pling.com/s/XFCE/p/1296407/
-# Extract to ~/.icons
+# -- icons: Papirus
+sudo add-apt-repository ppa:papirus/papirus
+sudo apt install papirus-icon-theme
 
-# -- themes: PRO-Dark-XFCE-Edition
-# https://www.xfce-look.org/p/1207818/
-# Extract to ~/.themes
+# -- themes: Matcha Gtk Theme
+sudo apt-get install gtk2-engines-murrine gtk2-engines-pixbuf
+git clone https://github.com/vinceliuice/Matcha-gtk-theme.git
+cd Matcha-gtk-theme
+./install.sh
 
